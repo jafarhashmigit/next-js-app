@@ -1,0 +1,50 @@
+main starting file bootstrap.js
+
+bootstrap.js
+    set env configuration
+    require global packages from src global-package.js
+    require all files at utils but not used at startup
+    require all files at libs but not used at startup
+    require all files at db used at startup (config/ db)
+    require server.js from src/server.js
+
+src -> utils -> // be remember all these files not used at startup
+    globalFile.util.js // not understand why we use this file
+        getGlobbedFiles (globPatterns, removeRoot)
+    hash.util.js // not understand why we use this file (HASH_ALGO, SALT)
+        makeHashValue (text)
+    random-utils.js // export function generateRandomNumber
+
+
+src -> libs -> // be remember all these files not used at startup
+    add third parties libraries to libs (like sender grid)
+    index.js // export all files inside this utils
+
+
+config -> db -> // all files run at startup
+    db-connection -> connection to database
+    index.js -> for loop not running
+
+src/ server.js -> server startup
+    express settings
+    add global messages and data constrains
+    require middleware folder but not run at startup
+    require services folder
+    require modules folders
+src -> middleware folder
+    middleware contain all validation
+    i used my middleware
+
+src -> services -> actions defined
+
+src -> modules folder
+    add models and routes
+
+
+
+our backend is
+
+make routes
+add middleware
+add actions
+all crud on services

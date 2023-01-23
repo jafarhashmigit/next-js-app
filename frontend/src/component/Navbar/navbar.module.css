@@ -1,0 +1,15 @@
+.site_navbar {
+    background-color: #343541;
+    border-bottom: 1px solid #343541;
+    box-shadow: 0 1px 3px 0 rgb(143 143 143 / 16%);
+    color: #ececf1 !important;
+    z-index: 1000 !important;
+    font-size: 15px;
+    height: 92px;
+}
+.site_navbar .show{
+    border-bottom: 2px solid #000;
+}
+.a {
+    color: #ececf1 !important;
+}
